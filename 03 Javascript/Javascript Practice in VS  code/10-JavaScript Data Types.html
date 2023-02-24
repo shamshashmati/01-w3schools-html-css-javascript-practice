@@ -1,0 +1,106 @@
+<!--
+================================================================================================================================
+Author's Name : Naqeem 
+Created Date : 23 / 01 / 2023
+Link : https://www.w3schools.com/js/default.asp
+================================================================================================================================
+ -->
+<!-- 
+01 :  JavaScript has 8 Datatypes
+        1. String
+        2. Number
+        3. Bigint
+        4. Boolean
+        5. Undefined
+        6. Null
+        7. Symbol
+        8. Object
+
+      The Object Datatype
+      The object data type can contain:
+        
+        1. An object
+        2. An array
+        3. A date  
+
+02 :  The Concept of Data Types  
+
+        In programming, data types is an important concept.
+
+        To be able to operate on variables, it is important to know something about the type.
+
+        Without data types, a computer cannot safely solve this:  
+        
+03 :  JavaScript Objects
+
+        JavaScript objects are written with curly braces {}.
+
+        Object properties are written as name:value pairs, separated by commas.
+
+        Syntax :
+            const person = {
+                firstName : "Momin",
+                lastName : "Naqeem",
+                age : 21,   
+            };
+            
+    
+    -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>JavaScript Operators</h1>
+    <h2>The typeof Operator</h2>
+    <p>The typeof operator returns the type of a variable or an expression.</p>
+
+    
+
+    <p id="demo"></p>
+    <p id="typeof"></p>
+    <p id="demo1"></p>
+    <p id="person"></p>
+    <p id="typeof1"></p>
+
+    <h2>JavaScript Arrays</h2>
+
+    <p>Array indexes are zero-based, which means the first item is [0].</p>
+
+    <p id="array"></p>
+    <script>
+        document.getElementById("demo").innerHTML = typeof 35 + "<br>" + typeof false + "<br>" + typeof "John Doe";
+
+        let car;
+        document.getElementById("typeof").innerHTML = car + "<br>" + typeof car;
+
+        let bike = "";
+        document.getElementById("demo1").innerHTML = "The value is" + "<br>" + typeof bike;
+
+        let carName = ["BMW", "Volvo", "Honda"]
+
+        const person = {
+            firstName : "Momin",
+            lastName : "Naqeem",
+            age : 21,
+            
+        };
+        document.getElementById("person").innerHTML = person.firstName + "is" + person.age + "years old";
+
+        let x = 35;
+        let y = "Momin";
+        let z = false ;
+
+        document.getElementById("typeof1").innerHTML = typeof 35 +  "<br>" + typeof "Momin" + "<br>" + typeof false;
+
+    </script>
+</body>
+
+</html>

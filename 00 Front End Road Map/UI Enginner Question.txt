@@ -1,0 +1,301 @@
+01 Favorite Question of the Interview for Web / UI Engineers
+
+Challenge - #01
+
+Problem Statement : Lets us discuss different ways to
+optimize a web page
+
+
+Topic: Optimizing Web Pages
+Disclaimer: It's a wide-open question. Please try to structure your approach. There can be a lot of things that can be optimized as
+
+
+- Fonts
+- Images / Videos
+- API Calls
+- HTML hierarchy
+- SEO
+- Accessibility
+- Taking Lighthouse Tool Help
+
+Disclaimer : There can be n number of ways to optimize.
+But Interviewer was looking for incremental approach
+
+Ex. Regarding Images
+
+1. Lets use svg/webp instead of jpg / png
+
+2. Now Add Lazy Loading ( How to actually Lazy Load
+images )
+
+Asked by Flipkart UI Tech Round , March 2022
+
+02 Slider.js
+
+
+Challenge - #5
+
+Problem Statement : Create a slider in only HTML , CSS AND
+Js
+
+Disclaimer :
+
+1. Slider can include Image / Simple text / PDF file .
+
+2. Slider should show active slide using dot
+
+3. Slider auto animation should stop while hovering
+
+Time Limit : 30 minutes
+
+
+03 Create a Promise polyfill
+
+Challenge - #3 
+
+Problem Statement : Create a Promise polyfill
+Solution : Verify your polyfill with MDN docs
+Disclaimer : Polyfill are favourite of interviewers .
+
+Please A try to implement - Map , Reduce , Filter , Bind , Promise.all polyfills
+before directly attempting to Promise polyfill.
+
+Kind Request @ : Please save your code in one repo for your future reference.
+
+JavaScript Round -2 , Microsoft , 2020
+
+04 Create a button
+
+using API
+
+The method loads the previous URL (page) in the history list. This method only works if a
+previous page
+
+<button onclick="history.back()">Go Back </button>
+
+
+05 HTML tabindex Attribute
+
+The tabindex attribute specifies the tab order of an
+element when the "tab" button is used for navigating.
+
+<html>
+<div tabindex="1">Apple </div>
+<div tabindex="2">Mango </div>
+<div tabindex="3">Banana </div>
+</html>
+
+06 Avoid word overflow using CSS
+
+The overflow-wrap property specifies whether or not thebrowser can break lines with long words if they
+overflow the container.
+
+.box1{
+
+// without overflow-wrap 
+}
+
+.box2 {
+
+overflow:break-word;
+
+}
+
+07 Want to know how to remove all the numbers from any String ???
+
+You can Use replace() to remove all numbers from a string, call the replace() method, passing it a regular expression that matches all
+numbers as the first parameter and an empty string as the second. The replace method will return a new string that doesn't contain any numbers.
+ 
+var greeting = " Hello 123 world "
+
+newGreating = someString.replace(/[0-9]/g ,'')
+
+console.log(newGreating);
+
+08 How to get the current URL?
+
+Use javascript window.location.href property which
+returns the full URL of the current page as a string.
+
+let currentURL = window.location.href;
+
+console.log(currentURL);
+
+09  You Can Get Minimum and Maximum Value From An Array Using Math.min() and Math.max().
+
+You Can Get Minimum and Maximum Value From An Array Using Math.min() and Math.max().
+
+const array1 = [1,2,3,4,5,6];
+
+console.log(Math.max(...array1)); // 6
+console.log(Math.min(...array11)); // 1
+
+10 srike-through text in HTML using <del> Tag 
+
+11 want know how to remove all the numbers from any String ???
+
+You can Use replace() to remove all numbers from a string, call the replace() method, passing it a regular expression that matches all numbers as
+the first parameter and an empty string as the second. The replace method will return a new string that doesn't contain any numbers.
+
+
+
+12 The !𝐢𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭 𝐑𝐮𝐥𝐞 in CSS and Why you should Avoid using it.
+
+! important should only use if you have no control over the css which is coming from an another source, 
+for e.g. third party library or iframe, that time you can override that css from your css file using important.
+
+
+
+
+example :
+
+p{
+ color: red !important ;
+}
+.text{
+ color: blue ;
+}
+#test{
+ color: yellow;
+}
+<p class="text" id='test'>!important in CSS </p>
+
+13 Mark Tag
+
+HTML <mark> Tag 
+
+Use <mark> HTML tag to Highlight the Important text . By default the background-color of the highlighted text is yellow. 
+
+ HTML <𝐦𝐚𝐫𝐤> Tag defines the text that should be marked or highlighted.
+ 
+ 
+14 CSS image-set() Function 
+
+The image-set() CSS functional notation is a method of letting the browser pick the Bost appropriate CSS image from a given set, primarily for high pixel density screens. 
+image-set() can be used to specify values for only three different CSS properties - content , cursor & background-image. 
+
+
+.div { /* Standard use */ background-image: image-set( url("small-Image.png") lx, url("large-Image.png") 
+
+/* Chrome/Edge/Opera/Samsung,Safari Use syntax ./ background-image: -webkit-image-set( url("small-Image.png") ix, url("large-Image.png") 2x); 
+E3 Sham Gurav 
+
+15 get the current day, month, and year in JavaScript 
+
+The Date object methods qetDate(), getMonth(:, and getFullYear() can be used to retrieve day, month, and full year from a date object in JavaScript. 
+
+0 0 const date = new Date(2022, 7, 7); const day = date.getDate(); 
+
+// getMonth() returns month from 0 to 11 const month = date.gethonth() a 1; 
+
+const year = date.getFullvear(); const currentDay = •S{day}/,(month)/$,year,-; console.log(currentDay); // 7/8/2022 
+
+15  reverse() in JavaScript 
+
+The reverse() method reverses the order of the elements in an array. It overwrites the original array. 
+
+
+const originalArray = [ 1, 2, 3, 4, 5 ]; 
+
+// Mutates Original Array const reversed = originalArray.reverse(); 
+
+console.log(reversed); // [ 5, 4, 3, 2, 1 ] 
+
+Note :- reverse method is destructive. It changes the original array. 
+
+ 16  Check if a key exists in local storage using JavaScript
+
+To check if a key exists in HTML local storage by using JS, you  canuse the getltem() method of the localStorage object. 
+If the key exists then the getltem() method returns current associated with the given key otherwise returns null. 
+if (localStorage.getItem('userName.) ,== null) f console.log('userName exists'), 1 else f console.log('userName not found'); 
+
+17  4 Ways to Reverse array without mutating Original array 
+
+const array = [ 1, 2, 3, 4, 5 ]; 
+const newArrayl = array.slice().reverse(); // [ 5, 4, 3, 2, 1 ] 
+const newArray2 = Array.from(array).reverse(); // [ 5, 4, 3, 2, 1 ] 
+const newArray3 = [...array].reverse(); // [ 5, 4, 3, 2, 1 ] 
+const newArray4 = Object.assign([], arnay).reverse(); // [ 5, 4, 3, 2, 1 ] 
+
+18  HTML <wbr> Tag⭐
+
+Note:- When a word is too long, the browser might break it at the wrong place. You can use the <wbr> element to add word-break opportunities.
+
+19 Make any Image Responsive 
+
+Make Image Responsive 
+
+You can make any image responsive by using the max-width:100% and height   auto css pty
+max-width:100 => sets the maximum width for an element as parent container. height:auto => element will automatically adjust its height to allow its content to be displayed correctly. 
+• • • 
+img { max-width: 100%; height: auto; 
+
+20  HTML autocomplete Attribute 
+
+The autocomplete attribute specifies whether a form or an input field should allow the browser to display options
+to fill in the fields as the user typing based on earlier typed values. 
+
+
+21 3 Ways to Writing Functions In JavaScript 
+
+1) Function Declaration 
+function sum(a, b) { return a + b; 
+}
+
+2) Function Expression 
+const sum = function(a, b) { return a b, }
+
+3) Function 
+const sum = (a, b) { return a + b; }
+
+22 Understanding JavaScript JSON stringify Method
+
+The JSON.stringify() method converts a JavaScript object or value to a JSON string. 
+When sending data to a web server or over a network, the data has to be in the form of string. 
+
+var User = { .name.,Raju., nage.:25, 
+console.log(JSON.stringify(User)); // '{"name":"Raju.,.age.:25,"city.:.Pune.}. 
+
+23  Center a Div using Tables
+
+By using display: table-cell we can center the child element inside the parent div center vertically and horizontally. 
+
+text-align: center; — Center child element Horizontally.
+vertical-align: center: — Center child element Vertically. 
+
+Applying the following properties to .parent will center .child element vertically & horizontally. 
+
+.parent f display: table-cell; text-align: center; vertical-align: middle; 
+.child f display: inline-block; 
+
+24  Center a Div using margin: auto on a grid item 
+
+Similar to centering a div using margin:auto on a flex item, it can be used on grid items to center it vertically and horizontally. 
+
+Apply margin: auto on a grid-item, it will center the grid-item horizontally and verticalh, inside .parent div. 
+
+
+25 Join an Array in JS 
+
+The join() method returns an array as a string and does not change the original array. 
+The default separator is a comma (,). You can specify any separator. 
+
+const words = ["follow", "for", "more"]; 
+console.log(words.join()); // Output - follow,for,more 
+console.log(words.join(" ")); // Output - follow for more 
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+

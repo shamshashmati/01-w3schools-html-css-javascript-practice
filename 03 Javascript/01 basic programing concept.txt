@@ -1,0 +1,33 @@
+0 How web application work ?
+
+	A web app requires mainly three elements to function properly. This includes a web server to handle requests from the client, an application server to execute the tasks requested and a database to store the information  (https://in.indeed.com/career-advice/career-development/what-is-a-web-application)    
+
+1 Compiler 
+2 Interpreter
+3 Types of Programming Lang ?
+
+	01 Proocedure level Lang
+		
+		Example : c lang 
+	
+	02 Functional level Lang 
+
+		Example : Javascript 
+	
+	03 Object Orinted Programming Lang 
+		
+		Exmple: C++ ,C# Java etc
+
+4 Different between low lang and high level lang ?
+
+5 Framework vs library
+
+6 OOPs concept
+
+	01 object
+	02 class
+	03 encapsualtion
+	04 abstraction
+	05 polymorphism
+	06 static and dynamic binding
+	07 Inheritance

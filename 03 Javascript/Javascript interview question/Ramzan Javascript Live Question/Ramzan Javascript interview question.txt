@@ -1,0 +1,64 @@
+Question 01 
+
+var z =1 ;
+
+function print(z) { console.log(z); var z = 10 }
+
+print();
+
+Output will be undefined.
+
+Before the code execution our code is parsed and during the parsing process the scope of the variables 
+are determined, so at first X will be set to udefined and the print function as a whole will get stored into
+the Global memory and when the print function will be called a function execution context will be created, 
+as we have again declared x variable inside print function, so in the function execution context x will be the 
+local variable and at first it will be set to undefined so when we will try to access the variable before it is 
+being initialised (console.log (x) ),we will get undefined as a result, as it is declared with var keyword.
+
+Question 02 : Find unique value from array of numbers
+
+
+soulution 01 : ------------------------------------------
+
+function onlyUnique(value, index, self) {
+  return self.indexOf(value) === index;
+}
+
+// usage example:
+var a = ['a', 1, 'a', 2, '1'];
+var unique = a.filter(onlyUnique);
+
+console.log(unique); // ['a', 1, 2, '1']
+
+soulution 02 : ------------------------------------------ 
+var myArray = ['a', 1, 'a', 2, '1'];
+
+let unique = [...new Set(myArray)];
+
+console.log(unique); // unique is ['a', 1, 2, '1']
+
+Question No 03 event life cycle in javascript
+
+Q 4 : event buuble in javascript
+
+Q 5 : find unique value from array 
+
+var number =  [1,2,3,3]; 
+
+output : [1,2]
+
+Q  6 : how to  load multiple ways to images in webpages
+
+Q 7 : if my mobile is 1990 px resultion so css will load or not into mobile
+
+Q 8 : Parent Div 100px with blue color and child Div 50px with red color  ? How to center child div 
+
+Q  9 : Css units
+
+Q  10 : Why package.lock json
+
+Q  11 : Different between background images and img tag
+
+Q 12 : Why we used background images Pty in css
+
+Q 13 

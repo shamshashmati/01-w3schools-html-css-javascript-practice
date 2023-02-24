@@ -1,0 +1,97 @@
+<!--
+================================================================================================================================
+Author's Name : Naqeem 
+Created Date : 23 / 01 / 2023
+Link : https://www.w3schools.com/js/default.asp
+================================================================================================================================
+ -->
+
+<!-- 01 :  JavaScript Objects
+
+        You have already learned that JavaScript variables are containers for data values.
+
+        This code assigns a simple value (Fiat) to a variable named car. 
+    
+                let car = "Fiat";
+
+    02 :   Object Definition
+
+        You define (and create) a JavaScript object with an object literal.  
+        
+    03 :   What is this?  
+    
+            In JavaScript, the this keyword refers to an object.
+
+        Which object depends on how this is being invoked (used or called).
+
+        The this keyword refers to different objects depending on how it is used:
+
+                    In an object method, this refers to the object.
+            Alone, this refers to the global object.
+            In a function, this refers to the global object.
+            In a function, in strict mode, this is undefined.
+            In an event, this refers to the element that received the event.
+            Methods like call(), apply(), and bind() can refer this to any object.
+
+    04 :   The this Keyword
+    
+            In a function definition, this refers to the "owner" of the function.
+
+        In the example above, this is the person object that "owns" the fullName function.
+
+        In other words, this.firstName means the firstName property of this object.
+    -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>JavaScript Variables</h2>
+
+    <p id="demo"></p>
+    <p id="person"></p>
+    <p id="man"></p>
+
+    <script>
+
+        // Objects are variables too. But objects can contain many values.
+
+        // This code assigns many values (Fiat, 500, white) to a variable named car:
+        const car = { type: "car", model: "420", color: "black" };
+        document.getElementById("demo").innerHTML = "the color is " + car.color;
+
+        const person = {
+            firstName: "Naqeem",
+            lastName: "Momin",
+            age: "21",
+        };
+        document.getElementById("person").innerHTML = person["firstName"] + " " + person["lastName"] + " " + person["age"] + " " + "years old";
+
+       let man = {
+        Name : "Mohammad",
+        SurName : "Momin",
+        age : 20,
+        fullName: function() {
+            return this.Name + " " + this.SurName + " " + this.age ;
+        }
+       };
+       document.getElementById("man").innerHTML = man.fullName();
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

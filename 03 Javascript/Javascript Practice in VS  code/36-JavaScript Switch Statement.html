@@ -1,0 +1,92 @@
+<!--
+================================================================================================================================
+Author's Name : Naqeem 
+Created Date : 23 / 01 / 2023
+Link : https://www.w3schools.com/js/default.asp
+================================================================================================================================
+ -->
+
+<!-- 
+
+01  : The JavaScript Switch Statement
+ 
+        Use the switch statement to select one of many code blocks to be executed.
+
+02  : Syntax
+
+            switch(expression) {
+                case x:
+                // code block
+                break;
+                case y:
+                // code block
+                break;
+                default:
+                // code block
+            } 
+        
+        
+        -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p  id="text"></p>
+
+    <script>
+        let day;
+        switch (new Date().getDay()) {
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 3:
+                day = "Wednesday";
+                break;
+            case 4:
+                day = "Thursday";
+                break;
+            case 5:
+                day = "Friday";
+                break;
+            case 6:
+                day = "Saturday";
+        }
+        document.getElementById("demo").innerHTML = "Today is " + day;
+
+        let text;
+        switch (new Date() .getDay()) {
+            case 7:
+            text = "Today is Sunday";
+            break;
+
+            case 8:
+            text = "Today is Monday"
+            break;
+
+            default:
+                text =  "Looking forward to the Weekend";
+        }
+
+        document.getElementById("text").innerHTML = text;
+
+                
+    </script>
+
+</body>
+
+</html>

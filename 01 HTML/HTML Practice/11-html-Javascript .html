@@ -1,0 +1,59 @@
+<!--
+================================================================================================================================
+Author's Name : Naqeem 
+Created Date : 24/ 01 / 2023
+Link :  https://www.w3schools.com/html/html_intro.asp
+================================================================================================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>My First JavaScript</h1>
+  <button type="button" onclick="document.getElementById('date').innerHTML = Date()">Click me to display Date and
+    Time</button>
+  <p id="date"></p>
+
+  <h2>Use JavaScript to Change Text</h2>
+  <p>This example writes "Hello JavaScript!" into an HTML element with id="demo":</p>
+
+  <p id="demo"></p>
+
+  <script>
+    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+  </script>
+  <h3>My Third Javascript </h3>
+  <p>JavaScript can change the content of an HTML element:</p>
+
+  <button type="button" onclick="myfunction()">Click me!</button>
+  <p id="content">This is a Content</p>
+  <script>
+    function myfunction() {
+      document.getElementById("content").innerHTML = " Hello My Javascript!";
+    }
+  </script>
+
+  <body>
+
+    <h1>My Fourth JavaScript</h1>
+
+    <p id="Element">JavaScript can change the style of an HTML element.</p>
+    <script>
+      function ChangeElement() {
+        document.getElementById("Element").style.fontSize = "25px";
+        document.getElementById("Element").style.color = "red";
+        document.getElementById("Element").style.background = "yellow";
+      }
+
+    </script>
+    <button type="button" onclick="ChangeElement()">click me!</button>
+  </body>
+
+</html>

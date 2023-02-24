@@ -1,0 +1,23 @@
+<!--
+================================================================================================================================
+Author's Name : Naqeem 
+Created Date : 23 / 01 / 2023
+Link : Git hub Basic 
+================================================================================================================================
+ -->
+
+Steps 
+01 git config --global user.name "Your Name"
+02  git config --global user.email "name@domain"
+
+echo "# basic-html-css-javascript-training" >> README.md
+03 git init
+04 git add .
+
+git add README.md
+05 git commit -m "first commit"
+06 git branch -M main
+07 git remote add origin https://github.com/naqeemraza/basic-html-css-javascript-training.git
+08 git push -u origin main
+
+

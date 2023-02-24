@@ -1,0 +1,12 @@
+Git Basic Commands
+
+01 git init
+02 git config --global user.email "ramzan@gmail.com"
+03 git config --global user.name "Ramzan"
+04 ls
+05 git status
+06 git add .
+07 git commit -m "first commit"
+08 git log
+09 git remote add origin "location Path"
+10 git push -u origin master --force

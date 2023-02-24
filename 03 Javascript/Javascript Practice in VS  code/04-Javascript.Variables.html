@@ -1,0 +1,77 @@
+<!--
+================================================================================================================================
+Author's Name : Naqeem 
+Created Date : 26 / 01 / 2023
+Link : https://www.w3schools.com/js/default.asp
+================================================================================================================================
+ -->
+<!-- 
+      Description
+01 :  When to Use JavaScript var? 
+
+      Always declare JavaScript variables with var,let, orconst.
+      The var keyword is used in all JavaScript code from 1995 to 2015.
+      The let and const keywords were added to JavaScript in 2015.
+      If you want your code to run in older browsers, you must use var.
+
+02 :  When to Use JavaScript const?
+
+      If you want a general rule: always declare variables with const.
+      If you think the value of the variable can change, use let.
+      In this example, price1, price2, and total, are variables:
+
+ -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Variables</h1>
+
+    <p>In this example, x, y, and z are variables.</p>
+
+    <h1>JavaScript Variables</h1>
+
+    <p>In this example, price1, price2, and total are variables.</p>
+
+
+    <h1>JavaScript Variables</h1>
+
+    <p>Strings are written with quotes.</p>
+    <p>Numbers are written without quotes.</p>
+
+    <!-- <p id="demo1"></p> -->
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <script>
+        let x = 5;
+        let y = 1;
+        let z = x + y;
+        document.getElementById("demo").innerHTML = "(This is the example of let) The value of z is: " + z;
+
+        const price1 = 5;
+        const price2 = 5;
+        let total = price1 + price2;
+        document.getElementById("demo2").innerHTML = "(This is the example of const) The total is: " + total;
+
+
+        const p1 = 3.15;
+        let person = "Naqeem";
+        let answer = 'Yes I am!';
+
+        document.getElementById("demo3").innerHTML = p1 + "<br>" + person + "<br>" + answer;
+
+    </script>
+
+</body>
+</html>
